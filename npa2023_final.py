@@ -83,6 +83,10 @@ while True:
             <!!!REPLACEME with code for disable command!!!>
         elif command == "status":
             <!!!REPLACEME with code for status command!!!>
+        elif command == "desc":
+            <!!!REPLACEME with code for status command!!!>
+        elif command == "ipv6":
+            <!!!REPLACEME with code for status command!!!>
         else:
             responseMessage = "Error: No command or unknown command"
         
