@@ -10,7 +10,7 @@
 
 เปลี่ยนแปลงโจทย์ดังนี้
 
-1. ทำตามโจทย์ NPA2023 Final โดยเปลี่ยนชื่อไฟล์ npa2023_final.py เป็น ipa2024_final.py และไม่ใช้ Hardcode Token ให้เก็บ Token ใน Environment variable
+1. ทำตามโจทย์ NPA2023 Final ไม่ใช้ Hardcode Token ให้เก็บ Token ใน Environment variable
 2. ให้ใช้ Netmiko/TextFSM เพื่อกำหนดค่า Description ของ Loopback Interface ที่สร้างมา
 3. ปรับปรุง ipa2024_final.py ให้เพิ่มรับ command desc เพื่อตั้งค่า description โดยใช้ netmiko/TextFSM ที่เขียนไว้ในข้อ เช่น เมื่อได้รับข้อความ "/66070123 desc myloopback" ให้ตั้งค่า description ของ interface loopback 66070123 ให้เป็นข้อความ myloopback และส่งผลการทำไปยัง Webex Team room IPA2024 ว่าการตั้งค่าสำเร็จหรือไม่สำเร็จ
 4. ใช้ ansible ทำ Lab เพื่อตั้งค่า IPv6 ของ Interface loopback เช่น เมื่อได้รับข้อความ "/66070123 ipv6 FE80::100" ให้ใช้ ansible playbook ไปตั้งค่า IPv6 Loopback 66070123 เป็น FE80::100/64 และทำการยืนยันโดยส่งกลับค่าไปยัง Webex Team room IPA2024 ว่าการตั้งค่าสำเร็จหรือไม่สำเร็จ
