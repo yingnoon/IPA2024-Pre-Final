@@ -9,9 +9,9 @@
 <!!!REPLACEME with code for libraries>
 
 #######################################################################################
-# 2. Assign the Webex hard-coded access token to the variable accessToken.
+# 2. Assign the Webex access token to the variable ACCESS_TOKEN using environment variables.
 
-accessToken = "Bearer <!!!REPLACEME with hard-coded token!!!>"
+ACCESS_TOKEN = os.environ."<!!!REPLACEME with os.environ method and environment variable!!!>"
 
 #######################################################################################
 # 3. Prepare parameters get the latest message for messages API.
